@@ -1,16 +1,9 @@
-# estaimy
+# Estaimy
 
-A new Flutter project.
+Simple quick-and-dirty app to use when estimating tickets during a SCRUM refinement. I built it specifically for my device so it might look horrible on anything other than a Pixel 3 XL.
 
-## Getting Started
+If others would like to use it as well I'll make sure it works on other devices as well.
 
-This project is a starting point for a Flutter application.
+## Disclaimer
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+It really is quick-and-dirty and the code for this app should not be used as reference for anything.
