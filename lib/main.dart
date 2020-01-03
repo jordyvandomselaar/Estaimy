@@ -11,10 +11,11 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
-        scaffoldBackgroundColor: Colors.white,
+        scaffoldBackgroundColor: Colors.black,
+        cardColor: Colors.black,
         appBarTheme: AppBarTheme(
-          color: Colors.white,
-        )
+          color: Colors.black,
+        ),
       ),
       home: SafeArea(
         child: HomeScreen(),

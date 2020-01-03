@@ -7,8 +7,7 @@ class EstimationCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-        child: InkWell(
+    return InkWell(
       onTap: () {
         Navigator.of(context)
             .push(MaterialPageRoute<void>(builder: (BuildContext context) {
@@ -20,9 +19,14 @@ class EstimationCard extends StatelessWidget {
                 child: Hero(
                   tag: this.estimation,
                   child: Material(
-                    child: Text(estimation,
-                        style: TextStyle(
-                            fontSize: 128, backgroundColor: Colors.white)),
+                    child: Container(
+                      color: Colors.black,
+                      child: Text(estimation,
+                          style: TextStyle(
+                              fontSize: 200,
+                              backgroundColor: Colors.black,
+                              color: Colors.white)),
+                    ),
                   ),
                 ),
               ),
@@ -31,19 +35,32 @@ class EstimationCard extends StatelessWidget {
         }));
       },
       child: SizedBox(
-        width: 100,
-        height: 100,
+        width: 120,
+        height: 120,
         child: Center(
           child: Hero(
             tag: this.estimation,
             child: Material(
-              child: Text(estimation,
-                  style:
-                      TextStyle(fontSize: 24, backgroundColor: Colors.white)),
+              child: Container(
+                decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.black,
+                        spreadRadius: 1,
+                      )
+                    ]
+                ),
+                child: Text(estimation,
+                    style: TextStyle(
+                      fontSize: 50,
+                      backgroundColor: Colors.black,
+                      color: Colors.white,
+                    )),
+              ),
             ),
           ),
         ),
       ),
-    ));
+    );
   }
 }
